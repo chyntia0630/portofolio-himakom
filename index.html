@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Chyntia</title>
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-..."
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <div class="bg-pattern"></div>
+
+    
+    <div class="floating-emoji" style="top: 10%; left: 5%;">✨</div>
+    <div class="floating-emoji" style="top: 20%; right: 10%; animation-delay: -2s;">💪</div>
+    <div class="floating-emoji" style="top: 60%; left: 8%; animation-delay: -4s;">🔥</div>
+    <div class="floating-emoji" style="top: 80%; right: 5%; animation-delay: -1s;">🚀</div>
+    <div class="floating-emoji" style="top: 40%; right: 3%; animation-delay: -3s;">⚡</div>
+   
+    <header>
+        <div class="logo">Portfolio</div>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#skill">Skill</a>
+        <a href="#penugasan">Penugasan</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+    
+    </header>
+    <section id="home" class="hero">
+        <h1>WELCOME TO MY PORTO</h1>
+        <button onclick="scrollToSection('profil')">Kenalan yuk</button>
+    </section>
+    <section id="profil" class="section fade-in">
+      <h2>PROFIL DIRI</h2>
+      <img src="ibel.jpeg" class="profile-img">
+      <p>Halo! aku Chyntia Aulya Libela mahasiswa aktif Teknik Informatika Politeknik Negeri Bandung.
+        Aku seorang pengembang pemula dengan ketertarikan kuat pada desain visual. Aku 
+        senang bereksperimen dengan desain grafis untuk menciptakan tampilan yang tidak hanya
+        fungsional, tapi juga enak dipandang. Aku selalu tertantang untuk mengubah ide kreatif 
+        menjadi kenyataan digital. 
+      </p>
+   
+</section>
+
+<section id="skill" class="section fade-in">
+  <h2>Skill & Minat</h2>
+  <div class="card-container">
+    <div class="card">HTML, CSS, JavaScript</div>
+    <div class="card">Desain Grafis</div>
+    <div class="card">Ms Office</div>
+    <div class="card">Disiplin dan tanggung jawab</div>
+  </div>
+</section>
+
+<section id="penugasan" class="section fade-in">
+  <h2>Penugasan</h2>
+
+  <div class="task-card">
+    <section class="dokumen-section"></section>
+      <div class="dokumen-card">
+        <div class="icon-box">
+          📄
+        </div>
+
+        <div class="dokumen-content">
+          <h3>Penugasan 2 - TOR LKMM-TH</h3>
+          <p>Menyusun TOR dengan konsep mentoring intensif dan pelaksanaan terintegrasi tanpa jeda panjang agar lebih efektif.</p>
+          <a href="https://docs.google.com/document/d/1VChwkgEslCxq6Y1U8lwxbZH-_Df5Q3nA/edit?usp=sharing&ouid=117860151544008638040&rtpof=true&sd=true"
+          target="_blank"
+          class="btn-dokumen">
+          Dokumen TOR
+        </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="task-card">
+    <section class="infografis-section">
+  <div class="infografis-card">
+    
+    <h2>Penugasan 3 - Infografis</h2>
+    <p>
+     Mengulas perbedaan peluang karier di kota dan desa serta bagaimana kesenjangan akses lapangan kerja berkontribusi terhadap angka pengangguran.
+    </p>
+
+    <div class="infografis-wrapper">
+      <img src="images/infografis.png" alt="Infografis Karier">
+    </div>
+
+    <a href="files/Infografis.pdf" download class="btn-download">
+      
+      Download Infografis
+    </a>
+
+  </div>
+</section>
+</div>
+  
+   <div class="task-card">
+    <section class="video-section">
+    <div class="card">
+    <div class="header">
+      <div>
+        <div class="title">Penugasan 4 - 🎥 Video</div>
+        
+        <div class="desc">Menyampaikan solusi strategis terkait kolaborasi UKM dan manajemen kegiatan HCW.</div>
+      </div>
+    </div>
+
+    <div class="video-wrapper">
+      <video id="video" controls>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+
+      <div class="controls">
+        <div>
+          Speed:
+          <select class="speed-select" id="speed">
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+          </select>
+        </div>
+
+        <div>
+          <button class="btn" onclick="downloadVideo()">Download</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  
+ 
+
+
+<section id="portofolio" class="section fade-in">
+  <h2>Portofolio / Riwayat Organisasi</h2>
+  <div class="card-container">
+    <div class="card">Anggota Paduan Suara</div>
+    <div class="card">Sekretaris PSSK</div>
+    <div class="card">Panitia Natal (PSSK)</div>
+  </div>
+</section>
+
+<section id="kontak" class="section fade-in">
+        <h1>Kontak <span>Saya</span></h1>
+        <p class="subtitle">
+            Hubungi saya melalui media sosial berikut.
+        </p>
+
+        <div class="card-container">
+
+            <a href="https://github.com/chyntia0630" target="_blank" class="card">
+                <div class="icon github">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>@chyntia0630</p>
+            </a>
+            <a href="https://www.instagram.com/chynntiaaaaa?igsh=MmVxMmNmdjkwMDVz" target="_blank" class="card">
+                <div class="icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h3>Instagram</h3>
+                <p>@chynntiaaaaa</p>
+            </a>
+            <a href="https://wa.me/6282118358575" target="_blank" class="card">
+                <div class="icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>+62 821-1835-8575</p>
+            </a>
+            <a href="www.linkedin.com/in/chyntia-aulya-libela-b75784381" target="_blank" class="card">
+                <div class="icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>@Chyntia Aulya Libela</p>
+            </a>
+
+        </div>
+
+        <div class="email-box">
+            <h3>Email: @chyntiaaulia960@gmail.com</h3>
+            <p>Kamu juga bisa menghubungi saya melalui email di atas.</p>
+            <i class="fa-brands fa-github"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-whatsapp"></i>
+<i class="fa-brands fa-linkedin"></i>
+
+        </div>
+    </section>
+
+    
+<footer>
+  <p>© 2025 Chyntia Aulya Libela | Open Recruitment HIMAKOM</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
